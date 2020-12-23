@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Done"
+
+    >
+
+
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginTop="10dp"
+        android:background="#808080">
+
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/txtTotalScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/txtTotalQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTotalScore"
+            android:layout_marginTop="20dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <ProgressBar
+            android:padding="10dp"
+            android:id="@+id/doneProgressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTotalQuestion"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:padding="10dp"
+            android:id="@+id/tryagain"
+            android:layout_centerHorizontal="true"
+            android:layout_width="300dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/roundbutton"
+            android:text="Try Again"
+
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/doneProgressBar" />
+        <Button
+            android:padding="10dp"
+            android:id="@+id/revise"
+            android:layout_centerHorizontal="true"
+            android:layout_width="300dp"
+            android:background="@drawable/roundbutton"
+            android:text="Revise"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tryagain" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
